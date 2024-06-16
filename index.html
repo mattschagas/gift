@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presente</title>
+    <link rel="shortcut icon" href="laco.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="background">
+            <!-- Background -->
+            <div class="giftbox">
+                <!-- Box -->
+                <div class="boxcard">
+                    <!-- Card -->
+                    <span class="card">
+                        <!-- Message -->
+                        Desde que eu te conheci, tenho me alegrado muito pela sua vida!
+                        Desejo muitas felicidades e um ano abençoado!
+                        <br><br>
+                        <i class="signature">— Seu amigo, Matheus.</i>
+                    </span>
+                </div>
+            </div>
+            <div class="tampa">
+                <img class="laco" src="./laco.png" alt="">
+            </div>
+        </div>
+    </main>
+    <footer style="position: fixed; bottom: 1em; left: 1em; color: whitesmoke; opacity: 0.3;">
+        @Matheus, 2024. (Codificado à Mão)
+    </footer>
+
+    <script>
+        const movableDiv = document.querySelector('.tampa');
+
+        movableDiv.addEventListener('mouseover', () => {
+            movableDiv.classList.add('hover-effect');
+        });
+
+        movableDiv.addEventListener('mouseout', () => {
+            movableDiv.classList.remove('hover-effect');
+        });
+
+        movableDiv.addEventListener('click', () => {
+            movableDiv.classList.add('clicked');
+        });
+    </script>
+</body>
+</html>
